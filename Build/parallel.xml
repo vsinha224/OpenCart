@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+  
+  <listeners>
+		<listener class-name="com.OpenCart.Utility.ExtentReportManager"></listener>
+	</listeners>
+	
+  
+  <test name="ChromeTest">
+
+  <parameter name="os" value="windowa" />
+  <parameter name="browser" value="chrome" />
+
+    <classes>
+      <class name="com.OpenCart.Register.TC_RegisterPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxTest">
+
+	  <parameter name="os" value="mac" />
+	  <parameter name="browser" value="firefox" />
+	
+	    <classes>
+	      <class name="com.OpenCart.Register.TC_RegisterPage"/>
+	    </classes>
+  </test> <!-- Test -->
+  
+  <test name="SafariTest">
+
+	  <parameter name="os" value="mac" />
+	  <parameter name="browser" value="safari" />
+	
+	    <classes>
+	      <class name="com.OpenCart.Register.TC_RegisterPage"/>
+	    </classes>
+  </test> <!-- Test -->
+  
+   
+  
+</suite> <!-- Suite -->

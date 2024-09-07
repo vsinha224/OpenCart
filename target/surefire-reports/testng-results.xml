@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-07T23:36:04 IST" name="Master Suite" finished-at="2024-09-07T23:36:31 IST" duration-ms="27449">
+    <groups>
+      <group name="Master">
+        <method signature="TC_LoginPage.LoginPage()[pri:0, instance:com.OpenCart.Login.TC_LoginPage@366c4480]" name="LoginPage" class="com.OpenCart.Login.TC_LoginPage"/>
+        <method signature="TC_RegisterPage.RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@2d36e77e]" name="RegisterPage" class="com.OpenCart.Register.TC_RegisterPage"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC_LoginPage.LoginPage()[pri:0, instance:com.OpenCart.Login.TC_LoginPage@366c4480]" name="LoginPage" class="com.OpenCart.Login.TC_LoginPage"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_RegisterPage.RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@2d36e77e]" name="RegisterPage" class="com.OpenCart.Register.TC_RegisterPage"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-09-07T23:36:04 IST" name="Test" finished-at="2024-09-07T23:36:31 IST" duration-ms="27449">
+      <class name="com.OpenCart.Register.TC_RegisterPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@2d36e77e]" started-at="2024-09-07T23:36:04 IST" name="setup" finished-at="2024-09-07T23:36:08 IST" duration-ms="4244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@2d36e77e]" started-at="2024-09-07T23:36:08 IST" name="RegisterPage" finished-at="2024-09-07T23:36:13 IST" duration-ms="4968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@2d36e77e]" started-at="2024-09-07T23:36:13 IST" name="tearDown" finished-at="2024-09-07T23:36:13 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OpenCart.Register.TC_RegisterPage -->
+      <class name="com.OpenCart.Login.TC_LoginPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Login.TC_LoginPage@366c4480]" started-at="2024-09-07T23:36:13 IST" name="setup" finished-at="2024-09-07T23:36:26 IST" duration-ms="13145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPage()[pri:0, instance:com.OpenCart.Login.TC_LoginPage@366c4480]" started-at="2024-09-07T23:36:26 IST" name="LoginPage" finished-at="2024-09-07T23:36:31 IST" duration-ms="4687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Login.TC_LoginPage@366c4480]" started-at="2024-09-07T23:36:31 IST" name="tearDown" finished-at="2024-09-07T23:36:31 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OpenCart.Login.TC_LoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Master Suite -->
+</testng-results>
