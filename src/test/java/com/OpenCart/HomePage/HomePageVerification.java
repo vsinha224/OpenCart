@@ -1,6 +1,8 @@
 package com.OpenCart.HomePage;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
 import com.OpenCart.Init.AbstractPage;
 
 public class HomePageVerification extends AbstractPage{
@@ -9,30 +11,22 @@ public class HomePageVerification extends AbstractPage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
-//	
-//	public String getConfirmtionMsg()
-//	{
-//		try {
-//			return(msgConfirmation)
-//		}
-//	}
-	
-	/*
-	public Boolean verifyTitle(String value) {
-	String expectedTitle = "Register Account";
-	String actTitle = driver.getTitle();
-	
-	if(actTitle.equalsIgnoreCase(actTitle))
+
+	public Boolean verifyTitle()
 	{
-		System.out.println("Title matched");
-		return true;
-	}
-	else
-	{
-		System.out.println("title not matched");
-		return false;
-	}
+		String expectedTitle = "Your Store";
+        String actTitle = driver.getTitle();
+
+        if (expectedTitle.equals(actTitle)) {
+            // Title matches, no action needed.
+            System.out.println("Title matched");
+            return true;
+        } else {
+            // Title does not match, fail the test.
+            System.out.println("Title Not matched");
+            Assert.fail("Title didn't match as expected: Expected '" + expectedTitle + "', but found '" + actTitle + "'");
+            return false;
+        }
 	
-}
-*/
+	}
 }

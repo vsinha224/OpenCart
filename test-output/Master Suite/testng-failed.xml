@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.OpenCart.Login.TC_LoginPage">
+      <class name="com.OpenCart.HomePage.TC_HomePage">
         <methods>
           <include name="tearDown"/>
-          <include name="LoginPage"/>
           <include name="setup"/>
+          <include name="HomePage"/>
         </methods>
-      </class> <!-- com.OpenCart.Login.TC_LoginPage -->
+      </class> <!-- com.OpenCart.HomePage.TC_HomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

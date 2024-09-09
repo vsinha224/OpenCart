@@ -1,43 +1,65 @@
 package com.OpenCart.HomePage;
 
 import org.testng.annotations.Test;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import com.OpenCart.Init.common;
+import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
+
+import org.testng.Assert;
 import com.OpenCart.Init.SeleniumInit;
 
 public class TC_HomePage extends SeleniumInit {
 	
-	@Test
+	@Test(groups= {"Regression", "Master"})
 	public void HomePage()
 	{
-		HomePage home = new HomePage(driver);
-		
-		String expectedTitle = "Your Store";
-		String actTitle = driver.getTitle();
-		
-		if(actTitle.equalsIgnoreCase(expectedTitle))
-		{
+		logger.info("************ Home Page Started ********");
+		try {
 			
-			Assert.assertTrue(true, "Title matched");
+		//Verify Title
+		HomePageVerification verification = new HomePageVerification(driver);
+		verification.verifyTitle();
+		
+		//Get element from Home page
+		HomePage home = new HomePage(driver); 
+		//Verify Nav bar displaying or not
+		logger.info("Nav Bar is present");
+		Boolean navDisplayed = home.navBar(); 
+		Assert.assertTrue(navDisplayed);
+		
+		// Verifing logo
+		logger.info("Logo is available");
+		Boolean headerLogo = home.headerLogo();
+		Assert.assertTrue(headerLogo);
+		
+		//very logo url
+		logger.info("Verifying logo url");
+		home.logoUrl();
+		
+		String expLogoUrl = "https://demo.opencart.com/en-gb?route=common/home";
+		String actLogoUrl = driver.getCurrentUrl();
+		
+		if(actLogoUrl.equals(expLogoUrl))
+		{
+			System.out.println("Logo Url is same as expected");
+		}else
+		{
+			System.out.println("Logo Url is not redirect as expected" + expLogoUrl + "But Found" +actLogoUrl);
+			Assert.fail();
 			
 		}
-		else
+		
+		
+		
+		}
+		catch(Exception e)
 		{
-			Assert.assertFalse(false, "Title not matched ");
-			
+			System.out.println("Home page exception is " +e);
+			Assert.fail();
 		}
 		
-//		home.myAccount();
-//		common.pause(1);
-//		home.Login();
-//		home.register();
 		
-		
-		
-		
-		
+		logger.info("************ Home Page Completed ********");
 		
 	}
 
