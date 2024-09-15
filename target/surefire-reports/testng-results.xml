@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-10T01:19:46 IST" name="Master Suite" finished-at="2024-09-10T01:19:53 IST" duration-ms="6661">
+  <suite started-at="2024-09-15T01:56:30 IST" name="Master Suite" finished-at="2024-09-15T01:56:41 IST" duration-ms="10829">
     <groups>
       <group name="Master">
-        <method signature="TC_HomePage.HomePage()[pri:0, instance:com.OpenCart.HomePage.TC_HomePage@503ecb24]" name="HomePage" class="com.OpenCart.HomePage.TC_HomePage"/>
+        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@503ecb24]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
       </group> <!-- Master -->
       <group name="Regression">
-        <method signature="TC_HomePage.HomePage()[pri:0, instance:com.OpenCart.HomePage.TC_HomePage@503ecb24]" name="HomePage" class="com.OpenCart.HomePage.TC_HomePage"/>
+        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@503ecb24]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-10T01:19:46 IST" name="Test" finished-at="2024-09-10T01:19:53 IST" duration-ms="6661">
-      <class name="com.OpenCart.HomePage.TC_HomePage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.HomePage.TC_HomePage@503ecb24]" started-at="2024-09-10T01:19:47 IST" name="setup" finished-at="2024-09-10T01:19:52 IST" duration-ms="5218" status="PASS">
+    <test started-at="2024-09-15T01:56:30 IST" name="Test" finished-at="2024-09-15T01:56:41 IST" duration-ms="10829">
+      <class name="com.OpenCart.Footer.TC_Footer">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Footer.TC_Footer@503ecb24]" started-at="2024-09-15T01:56:30 IST" name="setup" finished-at="2024-09-15T01:56:38 IST" duration-ms="7204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,18 +29,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HomePage()[pri:0, instance:com.OpenCart.HomePage.TC_HomePage@503ecb24]" started-at="2024-09-10T01:19:52 IST" name="HomePage" finished-at="2024-09-10T01:19:53 IST" duration-ms="629" status="FAIL">
+        <test-method signature="footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@503ecb24]" started-at="2024-09-15T01:56:38 IST" name="footer" finished-at="2024-09-15T01:56:41 IST" duration-ms="3308" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.OpenCart.HomePage.TC_HomePage.HomePage(TC_HomePage.java:33)
+at org.testng.Assert.fail(Assert.java:116)
+at com.OpenCart.Footer.TC_Footer.footer(TC_Footer.java:106)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -76,12 +74,12 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.HomePage.TC_HomePage@503ecb24]" started-at="2024-09-10T01:19:53 IST" name="tearDown" finished-at="2024-09-10T01:19:53 IST" duration-ms="287" status="PASS">
+        </test-method> <!-- footer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Footer.TC_Footer@503ecb24]" started-at="2024-09-15T01:56:41 IST" name="tearDown" finished-at="2024-09-15T01:56:41 IST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OpenCart.HomePage.TC_HomePage -->
+      </class> <!-- com.OpenCart.Footer.TC_Footer -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

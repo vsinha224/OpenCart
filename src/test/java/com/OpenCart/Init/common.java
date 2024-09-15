@@ -2,23 +2,21 @@ package com.OpenCart.Init;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+
 public class common {
 	
 	private static WebDriver driver;
-	
-	
 	
 	/*
 	 * Random number and String generator
@@ -70,28 +68,29 @@ public class common {
 	}
 	
 	
-	//For test fail screenshot 
-	// Screenshot method
-    public String captureScreen(String tname) 
-    {
+	
+	//on test fail screenshot 
+		// Screenshot method
+		
+	 // Updated to take driver as an argument and handle the null case
+    public String captureScreen( WebDriver driver, String tname) {
+        // Check if driver is null
+        if (driver == null) {
+            System.err.println("WebDriver instance is null! Cannot capture screenshot.");
+            throw new RuntimeException("WebDriver instance is null. Unable to take screenshot.");
+        }
+
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-
-        // Construct the target file path
+        File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);  // Use the driver instance here
         String targetDir = System.getProperty("user.dir") + "/Screenshots/";
         String targetFilePath = targetDir + tname + "_" + timeStamp + ".png";
         File targetFile = new File(targetFilePath);
 
         try {
-            // Create directory if not exists
             File screenshotDir = new File(targetDir);
             if (!screenshotDir.exists()) {
                 screenshotDir.mkdir();
             }
-
-            // Copy screenshot to the target location
             FileUtils.copyFile(sourceFile, targetFile);
         } catch (IOException e) {
             e.printStackTrace();
@@ -99,7 +98,7 @@ public class common {
 
         return targetFilePath;
     }
-	
+    
 	
 	
 	

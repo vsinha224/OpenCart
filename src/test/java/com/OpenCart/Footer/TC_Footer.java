@@ -43,10 +43,12 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfInformationLinks; i++)
 			{
+//				common.screenScroll((WebElement) informationLinks );
 				informationLinks.get(i).click();
 				common.pause(3);
 				verify.currentPageTitle();
-				
+				driver.navigate().back();
+
 				
 			}
 			
@@ -58,9 +60,11 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfCustomerLinks;i++)
 			{
+//				common.screenScroll((WebElement) customerLinks );
 				customerLinks.get(i).click();
 				common.pause(3);
-			verify.currentPageTitle();
+				verify.currentPageTitle();
+				driver.navigate().back();
 				
 			}
 			
@@ -72,10 +76,11 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfextrasLinks;i++)
 			{
+//				common.screenScroll((WebElement) extrasLinks );
 				extrasLinks.get(i).click();
 				common.pause(3);
 				verify.currentPageTitle();
-				
+				driver.navigate().back();
 			}
 			
 			logger.info("Verifying My Account link");
@@ -86,10 +91,12 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfmyAccountLinks;i++)
 			{
+//				common.screenScroll((WebElement) myAccountLinks );
 				myAccountLinks.get(i).click();
 				common.pause(3);
-				verify.currentPageTitle();
+			    verify.currentPageTitle();							
 				
+				driver.navigate().back();
 				
 			}
 			
@@ -103,6 +110,7 @@ public class TC_Footer extends SeleniumInit{
 		catch(Exception e)
 		{
 			logger.error("Footer test cases failed and Exception occured : " +e.getMessage());
+			
 			Assert.fail();
 		}
 		

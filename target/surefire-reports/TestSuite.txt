@@ -1,14 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.48 s <<< FAILURE! -- in TestSuite
-com.OpenCart.HomePage.TC_HomePage.HomePage -- Time elapsed: 0.618 s <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.15 s <<< FAILURE! -- in TestSuite
+com.OpenCart.Footer.TC_Footer.footer -- Time elapsed: 3.336 s <<< FAILURE!
+java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.OpenCart.HomePage.TC_HomePage.HomePage(TC_HomePage.java:33)
+	at org.testng.Assert.fail(Assert.java:116)
+	at com.OpenCart.Footer.TC_Footer.footer(TC_Footer.java:106)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

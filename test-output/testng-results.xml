@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-15T01:27:45 IST" name="Master Suite" finished-at="2024-09-15T01:29:06 IST" duration-ms="80626">
+  <suite started-at="2024-09-15T23:12:11 IST" name="Master Suite" finished-at="2024-09-15T23:13:24 IST" duration-ms="73769">
     <groups>
       <group name="Master">
-        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@3ee37e5a]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
+        <method signature="TC_HeaderSection.headerSection()[pri:0, instance:com.OpenCart.Header.TC_HeaderSection@3ee37e5a]" name="headerSection" class="com.OpenCart.Header.TC_HeaderSection"/>
       </group> <!-- Master -->
       <group name="Regression">
-        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@3ee37e5a]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
+        <method signature="TC_HeaderSection.headerSection()[pri:0, instance:com.OpenCart.Header.TC_HeaderSection@3ee37e5a]" name="headerSection" class="com.OpenCart.Header.TC_HeaderSection"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-15T01:27:45 IST" name="Test" finished-at="2024-09-15T01:29:06 IST" duration-ms="80626">
-      <class name="com.OpenCart.Footer.TC_Footer">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Footer.TC_Footer@3ee37e5a]" started-at="2024-09-15T01:27:46 IST" name="setup" finished-at="2024-09-15T01:28:03 IST" duration-ms="17111" status="PASS">
+    <test started-at="2024-09-15T23:12:11 IST" name="Test" finished-at="2024-09-15T23:13:24 IST" duration-ms="73769">
+      <class name="com.OpenCart.Header.TC_HeaderSection">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Header.TC_HeaderSection@3ee37e5a]" started-at="2024-09-15T23:12:11 IST" name="setup" finished-at="2024-09-15T23:12:19 IST" duration-ms="7370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@3ee37e5a]" started-at="2024-09-15T01:28:03 IST" name="footer" finished-at="2024-09-15T01:29:05 IST" duration-ms="62586" status="PASS">
+        <test-method signature="headerSection()[pri:0, instance:com.OpenCart.Header.TC_HeaderSection@3ee37e5a]" started-at="2024-09-15T23:12:19 IST" name="headerSection" finished-at="2024-09-15T23:13:23 IST" duration-ms="64789" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- footer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Footer.TC_Footer@3ee37e5a]" started-at="2024-09-15T01:29:05 IST" name="tearDown" finished-at="2024-09-15T01:29:06 IST" duration-ms="263" status="PASS">
+        </test-method> <!-- headerSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Header.TC_HeaderSection@3ee37e5a]" started-at="2024-09-15T23:13:24 IST" name="tearDown" finished-at="2024-09-15T23:13:24 IST" duration-ms="964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OpenCart.Footer.TC_Footer -->
+      </class> <!-- com.OpenCart.Header.TC_HeaderSection -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

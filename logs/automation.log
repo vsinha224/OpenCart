@@ -1,9 +1,18 @@
-01:09:35.537 [main] INFO  com.OpenCart.Login.TC_LoginPage - ************ Login Page Started ************* 
-01:09:38.333 [main] INFO  com.OpenCart.Login.TC_LoginPage - Entering login details
-01:28:03.314 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Started *************
-01:28:03.357 [main] INFO  com.OpenCart.Footer.TC_Footer - Clicking on every footer links
-01:28:03.357 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Information links
-01:28:19.097 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Customer Services link
-01:28:37.061 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Extras link
-01:28:51.619 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying My Account link
-01:29:05.870 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Completed *************
+23:07:52.822 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
+23:08:01.511 [main] ERROR com.OpenCart.Header.TC_HeaderSection - Header test cases failed and Exception occurred: Index 4 out of bounds for length 4
+23:09:07.186 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Started *************
+23:09:07.236 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Checking all links present in the header
+23:09:07.236 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
+23:09:09.449 [main] ERROR com.OpenCart.Header.TC_HeaderSection - Header test cases failed and Exception occurred: Unable to locate element: (//li[@class='dropdown'])[5]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f4a5b9ed-6a5b-42aa-92cc-e08b7123a30e, findElement {using=xpath, value=(//li[@class='dropdown'])[5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:11613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.0.0, moz:processID: 80297, moz:profile: /var/folders/hq/w2wzr2wj0qq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:11613/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: f4a5b9ed-6a5b-42aa-92cc-e08b7123a30e
+23:12:19.211 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Started *************
+23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Checking all links present in the header
+23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
+23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verify links present in MP3 Player Menu
+23:13:23.960 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Completed *************
