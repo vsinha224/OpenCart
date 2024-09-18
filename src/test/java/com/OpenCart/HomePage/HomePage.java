@@ -12,6 +12,8 @@ public class HomePage extends AbstractPage{
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
 	@FindBy(xpath="//span[normalize-space()='My Account']")
 	WebElement myAccount;
 	
@@ -21,40 +23,20 @@ public class HomePage extends AbstractPage{
 	@FindBy(xpath="(//a[contains(text(),'Login')])[1]")
 	WebElement login;
 	
-	@FindBy(xpath= "//nav[@id='menu']")
-	WebElement nav;
+	@FindBy(xpath="//div[@id='slideshow0']")
+	WebElement slider;
 	
-	@FindBy(xpath="//a[normalize-space()='Desktops']")
-	WebElement desktops;
+	@FindBy(xpath="(//div[@class='row'])[3]")
+	WebElement featuredList;
 	
-	@FindBy(xpath="//a[normalize-space()='Laptops & Notebooks']")
-	WebElement laptopsNotebooks;
-	
-	@FindBy(xpath="//a[normalize-space()='Components']")
-	WebElement components;
-	
-	@FindBy(xpath="//a[normalize-space()='Tablets']")
-	WebElement tablets;
-	
-	@FindBy(xpath="//a[normalize-space()='Software']")
-	WebElement software;
-	
-	@FindBy(xpath="//a[normalize-space()='Phones & PDAs']")
-	WebElement phones;
-	
-	@FindBy(xpath="//a[normalize-space()='Cameras']")
-	WebElement cameras;
-	
-	@FindBy(xpath="//a[normalize-space()='MP3 Players']")
-	WebElement mp3players;
-	
-	//header
-	@FindBy(xpath="//img[@title='Your Store']")
+	@FindBy(xpath="//div[@id='logo']//a")
 	WebElement logo;
 	
-	@FindBy(xpath="//input[@placeholder='Search']")
-	WebElement search;
+	@FindBy(xpath="(//div[@class='row'])[3]")
+	WebElement buttonsgrp;
 	
+	@FindBy(xpath="(//div[@class='swiper-viewport'])[2]")
+	WebElement logoSlider;
 	
 	/*
 	 * create a method for above element
@@ -74,38 +56,7 @@ public class HomePage extends AbstractPage{
 		login.click();
 	}
 	
-	
-	public Boolean navBar()
-	{
-		try {
-			return(nav.isDisplayed());
-			
-		}catch(Exception e)
-		{
-			return false;
-		}
-		
-	}
-	public Boolean desktopsMenu()
-	{
-		try {
-			return(desktops.isDisplayed());
-		}catch(Exception e)
-		{
-			return false;
-		}
-	}
-	
-	public Boolean headerLogo()
-	{
-		try {
-			return(logo.isDisplayed());
-		}catch(Exception e)
-		{
-			return false;
-		}
-	}
-	public void logoUrl()
+	public void clickLogo()
 	{
 		logo.click();
 	}

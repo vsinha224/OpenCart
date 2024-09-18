@@ -1,0 +1,47 @@
+13:08:09.232 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+13:08:11.563 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+13:08:12.760 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+13:08:25.298 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+13:08:37.837 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+13:08:38.310 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+13:08:42.016 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+13:10:26.485 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+13:10:26.543 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+13:10:26.598 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+13:10:28.749 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+13:10:30.025 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+13:10:42.890 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+13:10:55.351 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+13:10:55.761 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+13:10:59.519 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+14:43:14.025 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+14:43:14.081 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+14:43:14.176 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+14:43:16.630 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+14:43:17.859 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+14:43:30.386 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+14:43:42.912 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+14:43:43.441 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+14:43:47.491 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+18:35:58.146 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+18:35:58.226 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+18:35:58.290 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+18:36:00.635 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+18:36:01.981 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+18:36:14.595 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+18:36:26.977 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+18:36:27.377 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+18:36:31.080 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+18:36:31.103 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify that company logo slider images are visible and not broken
+18:36:31.112 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+18:37:45.986 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+18:37:46.053 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+18:37:46.108 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+18:37:48.338 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+18:37:49.715 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+18:38:02.474 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+18:38:14.863 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+18:38:15.264 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+18:38:19.059 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+18:38:19.080 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify that company logo slider images are visible and not broken
+19:14:07.578 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********

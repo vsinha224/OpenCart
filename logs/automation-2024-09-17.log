@@ -1,0 +1,48 @@
+19:49:01.065 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+19:49:01.239 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+19:49:01.360 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+19:49:03.583 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+19:49:04.850 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+19:49:17.429 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+19:49:29.835 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+20:17:36.676 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+20:17:36.735 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+20:17:36.787 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+20:17:39.070 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+20:17:40.271 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+20:17:52.809 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+20:18:05.210 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+20:18:05.783 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+20:23:50.551 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+20:23:50.615 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+20:23:50.669 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+20:23:52.873 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+20:23:54.120 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+20:24:06.665 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+20:24:19.045 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+20:24:19.742 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+20:29:43.302 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+20:29:43.365 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+20:29:43.444 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+20:29:45.724 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+20:29:46.944 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+20:29:59.497 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+20:30:11.904 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+20:30:12.649 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+20:47:34.956 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+20:47:35.018 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+20:47:35.083 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+20:47:37.180 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+20:47:38.429 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+20:47:50.965 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+20:48:03.474 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+20:48:04.093 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+11:11:47.169 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Started ********
+11:11:47.240 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+11:11:47.311 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+11:11:49.867 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+11:11:51.144 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+11:12:03.661 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured heading links are fine
+11:12:16.048 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+11:12:16.457 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+11:12:20.197 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision

@@ -1,6 +1,9 @@
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Footer/FooterSection.java
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Footer/FooterVerification.java
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Footer/TC_Footer.java
+/Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Header/HeaderSection.java
+/Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Header/HeaderVerification.java
+/Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/Header/TC_HeaderSection.java
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/HomePage/HomePage.java
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/HomePage/HomePageVerification.java
 /Volumes/YTech/AA__Java_And_Testing/E-Commerce_project/OpenCart/src/test/java/com/OpenCart/HomePage/TC_HomePage.java

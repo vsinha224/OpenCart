@@ -14,11 +14,11 @@
     <classes>
     
 		
-		<!--  <class name="com.OpenCart.HomePage.TC_HomePage"/>-->
+		<class name="com.OpenCart.HomePage.TC_HomePage"/>
 		<!-- <class name="com.OpenCart.Register.TC_RegisterPage"/>
 		<class name="com.OpenCart.Login.TC_LoginPageDDT"/>
 		<class name="com.OpenCart.Login.TC_LoginPage"/>-->
-		<class name="com.OpenCart.Header.TC_HeaderSection" />
+		<!-- <class name="com.OpenCart.Header.TC_HeaderSection" />-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

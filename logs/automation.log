@@ -1,18 +1,10 @@
-23:07:52.822 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
-23:08:01.511 [main] ERROR com.OpenCart.Header.TC_HeaderSection - Header test cases failed and Exception occurred: Index 4 out of bounds for length 4
-23:09:07.186 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Started *************
-23:09:07.236 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Checking all links present in the header
-23:09:07.236 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
-23:09:09.449 [main] ERROR com.OpenCart.Header.TC_HeaderSection - Header test cases failed and Exception occurred: Unable to locate element: (//li[@class='dropdown'])[5]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f4a5b9ed-6a5b-42aa-92cc-e08b7123a30e, findElement {using=xpath, value=(//li[@class='dropdown'])[5]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:11613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.0.0, moz:processID: 80297, moz:profile: /var/folders/hq/w2wzr2wj0qq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:11613/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: f4a5b9ed-6a5b-42aa-92cc-e08b7123a30e
-23:12:19.211 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Started *************
-23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Checking all links present in the header
-23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verifying Desktop links present
-23:12:19.275 [main] INFO  com.OpenCart.Header.TC_HeaderSection - Verify links present in MP3 Player Menu
-23:13:23.960 [main] INFO  com.OpenCart.Header.TC_HeaderSection - ************** Header Section Completed *************
+19:14:07.626 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
+19:14:07.709 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
+19:14:10.060 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
+19:14:11.467 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
+19:14:24.046 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
+19:14:36.462 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
+19:14:36.887 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
+19:14:40.687 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
+19:14:40.706 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify that company logo slider images are visible and not broken
+19:14:48.094 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
