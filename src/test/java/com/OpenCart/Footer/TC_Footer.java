@@ -3,6 +3,7 @@ package com.OpenCart.Footer;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,6 +26,9 @@ public class TC_Footer extends SeleniumInit{
 			FooterVerification verify = new FooterVerification(driver);
 			logger.info("Clicking on every footer links");
 			
+			//JavaScript executor
+			JavascriptExecutor js =  (JavascriptExecutor) driver;
+			
 		/*
 		 * 
 		 * 
@@ -43,10 +47,21 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfInformationLinks; i++)
 			{
-				informationLinks.get(i).click();
-				common.pause(3);
-				verify.currentPageTitle();
+				// Re-Locating webelement to avoid stale exception
+				informationLinks = footer.information.findElements(By.tagName("a"));
+				WebElement infoLinks = informationLinks.get(i);
 				
+				//JS to scrollIntoView to webelement
+				js.executeScript("arguments[0].scrollIntoView({block : 'center', inline : 'center'})", infoLinks);
+							
+				//JS to click on every links
+				js.executeScript("arguments[0].click()", infoLinks);
+				common.pause(1);
+				
+				verify.currentPageTitle();
+				driver.navigate().back();
+				common.pause(2);
+
 				
 			}
 			
@@ -58,9 +73,20 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfCustomerLinks;i++)
 			{
-				customerLinks.get(i).click();
-				common.pause(3);
-			verify.currentPageTitle();
+				//Re-locating webElement to avoid stale exception
+				customerLinks = footer.customerservices.findElements(By.tagName("a"));
+				WebElement custLinks = customerLinks.get(i);
+				
+				//JS to scroll to webelement
+				js.executeScript("arguments[0].scrollIntoView({block : 'center', inline :'center'})", custLinks);
+				
+				//JS to click on every inks
+				js.executeScript("arguments[0].click()", custLinks);
+				common.pause(1);
+				
+				verify.currentPageTitle();
+				driver.navigate().back();
+				common.pause(2);
 				
 			}
 			
@@ -72,10 +98,20 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfextrasLinks;i++)
 			{
-				extrasLinks.get(i).click();
-				common.pause(3);
-				verify.currentPageTitle();
+				//Re-locating WebElement to avoid stale exception
+				extrasLinks = footer.extra.findElements(By.tagName("a"));
+				WebElement footLinks = extrasLinks.get(i);
 				
+				//JS to scroll to webelement
+				js.executeScript("arguments[0].scrollIntoView({block : 'center', inline :'center'})", footLinks);
+				
+				//JS to click on every inks
+				js.executeScript("arguments[0].click()", footLinks);
+				
+				common.pause(1);
+				verify.currentPageTitle();
+				driver.navigate().back();
+				common.pause(2);
 			}
 			
 			logger.info("Verifying My Account link");
@@ -86,16 +122,27 @@ public class TC_Footer extends SeleniumInit{
 			
 			for(int i = 0; i<noOfmyAccountLinks;i++)
 			{
-				myAccountLinks.get(i).click();
-				common.pause(3);
-				verify.currentPageTitle();
+				//Re-locating webelement
+				myAccountLinks = footer.myaccount.findElements(By.tagName("a"));
+				WebElement accLinks = myAccountLinks.get(i);
 				
+				//JS to scroll to webelement
+				js.executeScript("arguments[0].scrollIntoView({block : 'center', inline :'center'})", accLinks);
+				
+				//JS to click on every inks
+				js.executeScript("arguments[0].click()", accLinks);
+				
+				common.pause(1);
+			    verify.currentPageTitle();							
+				
+				driver.navigate().back();
+				common.pause(2);
 				
 			}
 			
 		
-	// verify powered by link
-			logger.info("Verify Powered By link");
+			// verify powered by link
+			logger.info("Footer Verify Powered By link");
 			footer.poweredBy();
 			
 			
@@ -103,6 +150,7 @@ public class TC_Footer extends SeleniumInit{
 		catch(Exception e)
 		{
 			logger.error("Footer test cases failed and Exception occured : " +e.getMessage());
+			
 			Assert.fail();
 		}
 		

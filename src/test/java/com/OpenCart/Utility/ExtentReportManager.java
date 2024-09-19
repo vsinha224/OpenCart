@@ -3,18 +3,15 @@ package com.OpenCart.Utility;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.ImageHtmlEmail;
-import org.apache.commons.mail.resolver.DataSourceUrlResolver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.OpenCart.Init.SeleniumInit;
 import com.OpenCart.Init.common;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -22,7 +19,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReportManager implements ITestListener{
+public class ExtentReportManager extends SeleniumInit implements ITestListener{
 	
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extentReport;
@@ -77,25 +74,26 @@ public class ExtentReportManager implements ITestListener{
 		extentTest.log(Status.PASS, result.getName()+" Successfully Executed");
 	}
 	
-	
-	public void onTestFailure(ITestResult result)
-	{
-		extentTest = extentReport.createTest(result.getTestClass().getName()); // To display class name of every test cases
-		extentTest.assignCategory(result.getMethod().getGroups()); // To display methods and groups of every test cases
-		
-		extentTest.log(Status.FAIL, result.getName()+ " got failed");
-		extentTest.log(Status.INFO, result.getThrowable().getMessage());
-		
-		try
-		{
-			String imgPath = new common().captureScreen(result.getName());
-            extentTest.addScreenCaptureFromPath(imgPath);
-		}
-		catch(Exception e1)
-		{
-			e1.printStackTrace();
-		}
-	}
+	public void onTestFailure(ITestResult result) {
+        extentTest = extentReport.createTest(result.getTestClass().getName());
+        extentTest.assignCategory(result.getMethod().getGroups());
+
+        extentTest.log(Status.FAIL, result.getName() + " got failed");
+        extentTest.log(Status.INFO, result.getThrowable().getMessage());
+
+        try {
+            // Pass the WebDriver from SeleniumInit to the captureScreen method
+            if (driver == null) {
+                System.err.println("WebDriver is null in extentReportManager.");
+            } else {
+                String imgPath = new common().captureScreen(driver, result.getName()); // Ensure driver is passed here
+                extentTest.addScreenCaptureFromPath(imgPath);
+            }
+        } catch (Exception e1) {
+            e1.printStackTrace();
+        }
+    }
+
 	
 	public void onTestSkipped(ITestResult result)
 	{
@@ -133,21 +131,6 @@ public class ExtentReportManager implements ITestListener{
 		
 		
 		
-		
-		
-//		extentReport.flush();
-//		
-//		String pathOfExtentReport = System.getProperty("/Reports/"+reportName); // to open the report automatically added this code
-//		File extentReportPath = new File(pathOfExtentReport);
-//		
-//		try
-//		{
-//			Desktop.getDesktop().browse(extentReportPath.toURI());
-//		}catch(Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-	
 	
 	// After generating a report and send it to the team automatically
 	/*

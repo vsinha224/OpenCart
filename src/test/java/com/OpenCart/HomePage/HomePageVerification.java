@@ -12,7 +12,7 @@ public class HomePageVerification extends AbstractPage{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Boolean verifyTitle()
+	public boolean verifyTitle()
 	{
 		String expectedTitle = "Your Store";
         String actTitle = driver.getTitle();
@@ -29,4 +29,49 @@ public class HomePageVerification extends AbstractPage{
         }
 	
 	}
+	
+	public boolean verifyLinks()
+	{
+		String curPageTitle = driver.getTitle();
+		int count = 0;
+		
+		if(curPageTitle.contains("Page not found"))
+		{
+			count++;
+			Assert.fail("Page redirected to Page not found ");
+			return false;
+		}
+		else
+		{
+			System.out.println("images link are working fine");
+			return true;
+		}
+	}
+	
+	public boolean verifyMyAccount()
+	{
+		String expTitle = "My Account";
+		String actTitle = driver.getTitle();
+		if(expTitle.equalsIgnoreCase(actTitle))
+		{
+			System.out.println("My Account Title Passed");
+			return true;
+		}
+		else
+		{
+			
+			Assert.fail("My Account Title not matched");
+			return false;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

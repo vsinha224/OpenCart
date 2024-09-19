@@ -21,13 +21,13 @@ public class FooterVerification extends AbstractPage{
 			if(pageTitle.contains("Page not found"))
 			{
 				count++;
-				logger.error("Test Failed Expected Links not found");
-				driver.navigate().back();
+//				logger.error("Test Failed Expected Links not found");
+				
 				Assert.fail("Broken links are there ");
 				return false;
 			}
 			else {
-				System.out.println("All links are working fine under Information");
+				System.out.println("All links are working fine");
 				return true;
 			}
 		}

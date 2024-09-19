@@ -9,15 +9,17 @@
   <test thread-count="5" name="Test">
 	
 	  <parameter name="os" value="windows" />
-	  <parameter name="browser" value="chrome" />
+	  <parameter name="browser" value="firefox" />
 
     <classes>
     
-		<class name="com.OpenCart.Footer.TC_Footer" />	
-		<!--  <class name="com.OpenCart.HomePage.TC_HomePage"/>-->
-		<!-- <class name="com.OpenCart.Register.TC_RegisterPage"/>
-		<class name="com.OpenCart.Login.TC_LoginPageDDT"/>
-		<class name="com.OpenCart.Login.TC_LoginPage"/>-->
+		 
+		<class name="com.OpenCart.Register.TC_RegisterPage"/>
+		<class name="com.OpenCart.Login.TC_LoginPage"/>
+	    <class name="com.OpenCart.Header.TC_HeaderSection" />
+	    <class name="com.OpenCart.Footer.TC_Footer" />
+		<class name="com.OpenCart.HomePage.TC_HomePage"/>
+		<!-- <class name="com.OpenCart.Header.TC_HeaderSection" />-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

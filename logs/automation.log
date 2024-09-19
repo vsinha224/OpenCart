@@ -1,9 +1,16 @@
-01:09:35.537 [main] INFO  com.OpenCart.Login.TC_LoginPage - ************ Login Page Started ************* 
-01:09:38.333 [main] INFO  com.OpenCart.Login.TC_LoginPage - Entering login details
-01:28:03.314 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Started *************
-01:28:03.357 [main] INFO  com.OpenCart.Footer.TC_Footer - Clicking on every footer links
-01:28:03.357 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Information links
-01:28:19.097 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Customer Services link
-01:28:37.061 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Extras link
-01:28:51.619 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying My Account link
-01:29:05.870 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Completed *************
+11:41:13.303 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Started *************
+11:41:13.363 [main] INFO  com.OpenCart.Footer.TC_Footer - Clicking on every footer links
+11:41:13.363 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Information links
+11:41:25.956 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Customer Services link
+11:41:35.325 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Extras link
+11:41:47.902 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying My Account link
+11:42:00.373 [main] INFO  com.OpenCart.Footer.TC_Footer - Verify Powered By link
+11:42:04.044 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Completed *************
+11:52:57.681 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Started *************
+11:52:57.738 [main] INFO  com.OpenCart.Footer.TC_Footer - Clicking on every footer links
+11:52:57.738 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Information links
+11:53:10.443 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Customer Services link
+11:53:19.874 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Extras link
+11:53:32.380 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying My Account link
+11:53:44.833 [main] INFO  com.OpenCart.Footer.TC_Footer - Footer Verify Powered By link
+11:53:48.709 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Completed *************
