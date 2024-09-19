@@ -141,8 +141,8 @@ public class TC_Footer extends SeleniumInit{
 			}
 			
 		
-	// verify powered by link
-			logger.info("Verify Powered By link");
+			// verify powered by link
+			logger.info("Footer Verify Powered By link");
 			footer.poweredBy();
 			
 			
