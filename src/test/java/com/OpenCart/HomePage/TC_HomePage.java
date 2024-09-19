@@ -1,9 +1,6 @@
 package com.OpenCart.HomePage;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
-import static org.testng.Assert.*;
 
 import java.util.List;
 
@@ -38,6 +35,7 @@ public class TC_HomePage extends SeleniumInit {
 		verification.verifyTitle();
 		
 		logger.info("Verify Slider is visible or not");
+		
 		List<WebElement> sliderImg = home.slider.findElements(By.tagName("img"));
 		int noOFSliderImg = sliderImg.size();
 		System.out.println("Total Number of Slider Images are present : " +noOFSliderImg);

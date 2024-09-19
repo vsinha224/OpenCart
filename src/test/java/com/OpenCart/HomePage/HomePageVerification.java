@@ -64,4 +64,14 @@ public class HomePageVerification extends AbstractPage{
 			return false;
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

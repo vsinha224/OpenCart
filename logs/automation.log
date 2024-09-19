@@ -1,10 +1,8 @@
-19:14:07.626 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify Slider is visible or not
-19:14:07.709 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying all the images are loading not a broken images present
-19:14:10.060 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Featured Product images are not broken
-19:14:11.467 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Image Links are working fine
-19:14:24.046 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying Product heading links 
-19:14:36.462 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verifying price is displaying 
-19:14:36.887 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Login in to the application with Entering stored Credential
-19:14:40.687 [main] INFO  com.OpenCart.HomePage.TC_HomePage - List of all the buttons cart, wishlist and comparision
-19:14:40.706 [main] INFO  com.OpenCart.HomePage.TC_HomePage - Verify that company logo slider images are visible and not broken
-19:14:48.094 [main] INFO  com.OpenCart.HomePage.TC_HomePage - ************ Home Page Completed ********
+11:41:13.303 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Started *************
+11:41:13.363 [main] INFO  com.OpenCart.Footer.TC_Footer - Clicking on every footer links
+11:41:13.363 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Information links
+11:41:25.956 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Customer Services link
+11:41:35.325 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying Extras link
+11:41:47.902 [main] INFO  com.OpenCart.Footer.TC_Footer - Verifying My Account link
+11:42:00.373 [main] INFO  com.OpenCart.Footer.TC_Footer - Verify Powered By link
+11:42:04.044 [main] INFO  com.OpenCart.Footer.TC_Footer - ************** Footer Completed *************
