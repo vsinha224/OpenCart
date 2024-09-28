@@ -2,15 +2,19 @@ package com.OpenCart.HomePage;
 
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.OpenCart.Init.SeleniumInit;
 import com.OpenCart.Init.common;
@@ -23,20 +27,24 @@ public class TC_HomePage extends SeleniumInit {
 	@Test(groups= {"Regression", "Master"})
 	public void HomePage()
 	{
+		
 		// JavaScript Executor to scroll elements into view
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-		logger.info("************ Home Page Started ********");
-		try {
-		
-			HomePage home = new HomePage(driver); 
-		//Verify Title
-		HomePageVerification verification = new HomePageVerification(driver);
-		verification.verifyTitle();
-		
-		logger.info("Verify Slider is visible or not");
-		
-		List<WebElement> sliderImg = home.slider.findElements(By.tagName("img"));
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	logger.info("************ Home Page Started ********");
+	try {
+	
+	HomePage home = new HomePage(driver); 
+	//Verify Title
+			
+	HomePageVerification verification = new HomePageVerification(driver);
+	
+	verification.verifyTitle();
+	
+	logger.info("Verify Slider is visible or not");
+	
+	 
+	 List<WebElement> sliderImg = home.slider.findElements(By.tagName("img"));
 		int noOFSliderImg = sliderImg.size();
 		System.out.println("Total Number of Slider Images are present : " +noOFSliderImg);
 		
@@ -62,6 +70,7 @@ public class TC_HomePage extends SeleniumInit {
 		}
 		
 		logger.info("Verifying Featured Product images are not broken");
+		common.pause(3);
 		
 		int featuredProductCount = 0;
 		List<WebElement> featuredProductImgList = home.featuredList.findElements(By.tagName("img"));
@@ -101,12 +110,11 @@ public class TC_HomePage extends SeleniumInit {
 						
 			//JS to click on every links
 			js.executeScript("arguments[0].click()", link);
-			common.pause(1);
 			verification.verifyLinks();
-			
+			common.pause(3);
 			//navigate back to the orginal page to avoid stale exception
 			driver.navigate().back();
-			common.pause(2);
+			common.pause(3);
 			
 		}
 		
@@ -128,16 +136,14 @@ public class TC_HomePage extends SeleniumInit {
 			
 			//JS to click on every links
 			js.executeScript("arguments[0].click()", featuredLink);
-			common.pause(1);
 			verification.verifyLinks();
 			
 			// Navigate back to the source page
 			driver.navigate().back();
-			common.pause(2);
+			common.pause(3);
 		}
 		
-		
-		
+			
 		logger.info("Verifying price is displaying ");
 		//Loop to verify price are showign for every product
 		for(int i =0; i<noOfFeaturedProductImgList; i++)
@@ -176,63 +182,94 @@ public class TC_HomePage extends SeleniumInit {
 		        Assert.fail();
 			}
 		}
+			
 		
 		//Login in to the applicaiton
 		logger.info("Login in to the application with Entering stored Credential");
 		LoginPage login = new LoginPage(driver);
+		common.pause(3);
+		js.executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+		common.pause(2);
+		
 		home.myAccount();
 		home.Login();
 		login.emailInput(readconfig.getUser());
 		login.passwordInput(readconfig.getPassword());
 		login.clickSubmit();
 		
-		common.pause(2);
 		verification.verifyMyAccount();
 		home.clickLogo();
+		common.pause(4);
 		
 		//Verifying add to cart, wishlist and comparision button
 		logger.info("List of all the buttons cart, wishlist and comparision");
 		List<WebElement> buttonGroup = home.buttonsgrp.findElements(By.tagName("button"));
 		int noOfButtons = buttonGroup.size();
 		System.out.println("Total Number of Buttons are " +noOfButtons);
-		/*
-		 * 
-		 * 
-		 * commenting out below code as getting an Bug here will uncomment it later
-		 *
 		
-		//Loop to click on all buttons
-		for(int i = 0; i<noOfButtons; i++ )
+		// Click on all buttons
+		for(int i = 0; i<noOfButtons; i++)
 		{
-			// Re-Locate webelement to avoid stale exception
-			buttonGroup=home.buttonsgrp.findElements(By.tagName("button"));
-			WebElement buttonList = buttonGroup.get(i);
+			//Re-Locating elements to avoid stale exception
+			buttonGroup = home.buttonsgrp.findElements(By.tagName("button"));
+			WebElement btnLink = buttonGroup.get(i);
 			
-			//JS to scrollIntoView to the WebElement
-			js.executeScript("arguments[0].scrollIntoView({block : 'center', inline : 'center'})", buttonList);
-			js.executeScript("arguments[0].click()", buttonList);
+			// JS to scrol in to view
+			js.executeScript("arguments[0].scrollIntoView({block : 'center', inline : 'center'})", btnLink);
+			
+			//JS to click on every buttons
+			js.executeScript("arguments[0].click()", btnLink);
 			common.pause(2);
 			
-			
-			//Verify success message on button click
-			WebElement successMessage = driver.findElement(By.className("alert-success"));
-			if(successMessage.isDisplayed())
-			{
-				System.out.println("Success message displayed: " + successMessage.getText());
+			// Locate the success message element
+			WebElement successMessage = null;
+			try {
+			    successMessage = driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
+			} catch (Exception e) {
+			    // Success message element not found
 			}
+
+			// Check if the success message is displayed
+			if (successMessage != null && successMessage.isDisplayed()) {
+			    System.out.println("Success message displayed: " + successMessage.getText());
+			} 
 			else 
 			{
-		        System.out.println("No success message displayed after clicking button " + (i + 1));
-		        Assert.fail("No success message displayed for button " + (i + 1));
-		        
-		    }
-			driver.navigate().back();
-			common.pause(1);
-			
+			    // Fetch the current page title
+			    String pageTitle = driver.getTitle().trim();
+			    
+			    // Check if the page title is not "Your Store"
+			    if (!pageTitle.equalsIgnoreCase("Your Store")) 
+			    {
+			        // Pause before navigating back
+			        common.pause(2);
+			        System.out.println("Redirected to " + pageTitle + " Page. Navigating back.");
+			        
+			        // Navigate back to the previous page
+			        driver.navigate().back();
+			        
+			        // Wait for the page to load and confirm if we're back to "Your Store"
+			        common.pause(2);
+			        String newPageTitle = driver.getTitle().trim();
+			        if (newPageTitle.equalsIgnoreCase("Your Store"))
+			        {
+			            System.out.println("Successfully returned to Your Store page.");
+			        } 
+			        else 
+			        {
+			            Assert.fail("Failed to return to Your Store page. Current page: " + newPageTitle);
+			        }
+			    } 
+			    else 
+			    {
+			        // Success message not displayed, and we're on the "Your Store" page
+			        System.out.println("Success message not displayed and on 'Your Store' page.");
+			        Assert.fail("No success message displayed and no navigation.");
+			    }
+			}
 			
 		}
-		
-		*/
+			
 		
 		// Verify Company logo slider img are visible
 		logger.info("Verify that company logo slider images are visible and not broken");
@@ -252,7 +289,7 @@ public class TC_HomePage extends SeleniumInit {
 			HttpGet request = new HttpGet(companyPortfolio.getAttribute("src"));
 			HttpResponse response = client.execute(request);
 			
-			if(response.getStatusLine().getStatusCode() !=0)
+			if(response.getStatusLine().getStatusCode()>= 200 && response.getStatusLine().getStatusCode() < 300)
 			{
 				System.out.println("All Company Portfolio images are loaded and not broken");
 				

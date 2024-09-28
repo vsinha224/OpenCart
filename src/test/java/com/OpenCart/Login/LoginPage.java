@@ -19,7 +19,7 @@ public class LoginPage extends AbstractPage{
 	@FindBy(xpath="//input[@id='input-password']")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(xpath="//button[@type='submit']")
 	WebElement submit;
 	
 	

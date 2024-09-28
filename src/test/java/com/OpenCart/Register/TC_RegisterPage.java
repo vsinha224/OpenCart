@@ -1,6 +1,7 @@
 package com.OpenCart.Register;
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 
 import com.OpenCart.HomePage.HomePage;
@@ -13,6 +14,7 @@ public class TC_RegisterPage extends SeleniumInit{
 	@Test(groups= {"Regression","Master"})
 	public void RegisterPage()
 	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		logger.info("********** Started TC_RegisterPage TestCases *********");
 		
 		try
@@ -48,9 +50,12 @@ public class TC_RegisterPage extends SeleniumInit{
 		register.fName(common.randomString().toUpperCase());
 		register.lName(common.randomString().toUpperCase());
 		register.Email(common.randomString()+"@gmail.com");
-		register.Tel(common.randomNumber());
+//		register.Tel(common.randomNumber());
 		register.Password(passwordInput);
-		register.CnfPassword(passwordInput);
+//		register.CnfPassword(passwordInput);
+		
+		js.executeScript("window.scrollBy(0,500)");
+		common.pause(2);
 		register.Newsletter();
 		register.AgreeCheck();
 		register.ContinueBtn();

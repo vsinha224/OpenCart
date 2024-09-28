@@ -13,28 +13,28 @@ public class HeaderSection extends AbstractPage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	@FindBy(xpath="(//li[@class='dropdown'])[2]")
+	@FindBy(xpath="(//li[@class='nav-item dropdown'])[1]")
 	WebElement desktop;
 	
-	@FindBy(xpath="(//li[@class='dropdown'])[3]")
+	@FindBy(xpath="(//li[@class='nav-item dropdown'])[2]")
 	WebElement laptops;
 	
-	@FindBy(xpath="(//li[@class='dropdown'])[4]")
+	@FindBy(xpath="(//li[@class='nav-item dropdown'])[3]")
 	WebElement components;
 	
-	@FindBy(xpath="//nav[@id='menu']/div[@class='collapse navbar-collapse navbar-ex1-collapse']/ul[@class='nav navbar-nav']/li[4]")
+	@FindBy(xpath="(//li[@class='nav-item'])[1]")
 	WebElement tablets;
 	
-	@FindBy(xpath="//nav[@id='menu']/div[@class='collapse navbar-collapse navbar-ex1-collapse']/ul[@class='nav navbar-nav']/li[5]")
+	@FindBy(xpath="(//li[@class='nav-item'])[2]")
 	WebElement software;
 	
-	@FindBy(xpath="//nav[@id='menu']/div[@class='collapse navbar-collapse navbar-ex1-collapse']/ul[@class='nav navbar-nav']/li[6]")
+	@FindBy(xpath="(//li[@class='nav-item'])[3]")
 	WebElement phone;
 	
-	@FindBy(xpath="//nav[@id='menu']/div[@class='collapse navbar-collapse navbar-ex1-collapse']/ul[@class='nav navbar-nav']/li[7]")
+	@FindBy(xpath="(//li[@class='nav-item'])[4]")
 	WebElement camera;
 	
-	@FindBy(xpath="//nav[@id='menu']/div[@class='collapse navbar-collapse navbar-ex1-collapse']/ul[@class='nav navbar-nav']/li[8]")
+	@FindBy(xpath="(//li[@class='nav-item dropdown'])[4]")
 	WebElement mp3Player;
 
 }

@@ -14,28 +14,28 @@ public class HomePage extends AbstractPage{
 	}
 	
 	
-	@FindBy(xpath="//span[normalize-space()='My Account']")
+	@FindBy(xpath="(//span[@class='d-none d-md-inline'])[3]")
 	WebElement myAccount;
 	
-	@FindBy(xpath="//a[normalize-space()='Register']")
+	@FindBy(xpath="//a[@class='dropdown-item'][normalize-space()='Register']")
 	WebElement register;
 	
-	@FindBy(xpath="(//a[contains(text(),'Login')])[1]")
+	@FindBy(xpath="//a[contains(text(),'Login')]")
 	WebElement login;
 	
-	@FindBy(xpath="//div[@id='slideshow0']")
+	@FindBy(xpath="//div[@id='carousel-banner-0']")
 	WebElement slider;
 	
-	@FindBy(xpath="(//div[@class='row'])[3]")
+	@FindBy(xpath="//div[@class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4']")
 	WebElement featuredList;
 	
 	@FindBy(xpath="//div[@id='logo']//a")
 	WebElement logo;
 	
-	@FindBy(xpath="(//div[@class='row'])[3]")
+	@FindBy(xpath="//div[@class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4']")
 	WebElement buttonsgrp;
 	
-	@FindBy(xpath="(//div[@class='swiper-viewport'])[2]")
+	@FindBy(xpath="//div[@id='carousel-banner-1']//div[@class='carousel-inner']")
 	WebElement logoSlider;
 	
 	/*

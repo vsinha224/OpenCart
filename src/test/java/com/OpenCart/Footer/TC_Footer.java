@@ -143,6 +143,7 @@ public class TC_Footer extends SeleniumInit{
 		
 			// verify powered by link
 			logger.info("Footer Verify Powered By link");
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			footer.poweredBy();
 			
 			

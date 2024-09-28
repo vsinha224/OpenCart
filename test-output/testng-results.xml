@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-19T11:52:47 IST" name="Master Suite" finished-at="2024-09-19T11:53:49 IST" duration-ms="62879">
+  <suite started-at="2024-09-28T21:14:17 IST" name="Master Suite" finished-at="2024-09-28T21:14:33 IST" duration-ms="16010">
     <groups>
       <group name="Master">
-        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@f0da945]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
+        <method signature="TC_RegisterPage.RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@f0da945]" name="RegisterPage" class="com.OpenCart.Register.TC_RegisterPage"/>
       </group> <!-- Master -->
       <group name="Regression">
-        <method signature="TC_Footer.footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@f0da945]" name="footer" class="com.OpenCart.Footer.TC_Footer"/>
+        <method signature="TC_RegisterPage.RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@f0da945]" name="RegisterPage" class="com.OpenCart.Register.TC_RegisterPage"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-19T11:52:47 IST" name="Test" finished-at="2024-09-19T11:53:49 IST" duration-ms="62879">
-      <class name="com.OpenCart.Footer.TC_Footer">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Footer.TC_Footer@f0da945]" started-at="2024-09-19T11:52:47 IST" name="setup" finished-at="2024-09-19T11:52:57 IST" duration-ms="9990" status="PASS">
+    <test started-at="2024-09-28T21:14:17 IST" name="Test" finished-at="2024-09-28T21:14:33 IST" duration-ms="16010">
+      <class name="com.OpenCart.Register.TC_RegisterPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@f0da945]" started-at="2024-09-28T21:14:18 IST" name="setup" finished-at="2024-09-28T21:14:27 IST" duration-ms="9284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,15 +29,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="footer()[pri:0, instance:com.OpenCart.Footer.TC_Footer@f0da945]" started-at="2024-09-19T11:52:57 IST" name="footer" finished-at="2024-09-19T11:53:48 IST" duration-ms="51073" status="PASS">
+        <test-method signature="RegisterPage()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@f0da945]" started-at="2024-09-28T21:14:27 IST" name="RegisterPage" finished-at="2024-09-28T21:14:32 IST" duration-ms="5128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- footer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Footer.TC_Footer@f0da945]" started-at="2024-09-19T11:53:48 IST" name="tearDown" finished-at="2024-09-19T11:53:49 IST" duration-ms="1149" status="PASS">
+        </test-method> <!-- RegisterPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OpenCart.Register.TC_RegisterPage@f0da945]" started-at="2024-09-28T21:14:32 IST" name="tearDown" finished-at="2024-09-28T21:14:33 IST" duration-ms="977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OpenCart.Footer.TC_Footer -->
+      </class> <!-- com.OpenCart.Register.TC_RegisterPage -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>
