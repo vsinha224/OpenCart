@@ -8,13 +8,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.OpenCart.Footer.TC_Footer">
+      <class name="com.OpenCart.Register.TC_RegisterPage">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="footer"/>
+          <include name="RegisterPage"/>
         </methods>
-      </class> <!-- com.OpenCart.Footer.TC_Footer -->
+      </class> <!-- com.OpenCart.Register.TC_RegisterPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

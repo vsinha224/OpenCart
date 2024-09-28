@@ -3,15 +3,19 @@ package com.OpenCart.Init;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class common {
@@ -54,6 +58,23 @@ public class common {
 //			System.out.println("Pause Exception " + e.getMessage());
 		}
 	}
+	
+	/*
+	 * Explicit wait
+	 */
+//	public static void expWait(WebDriver driver, Duration sec, By locator)
+//	{
+//		try {
+//	        WebDriverWait wait = new WebDriverWait(driver, sec);
+//	        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+//	    } 
+//		catch (Exception e) 
+//		{
+//	        e.printStackTrace(); // This will print the stack trace
+//	    }
+//		
+//	}
+	
 	
 	@SuppressWarnings("deprecation")
 	public static void wait(String wait)
